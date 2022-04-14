@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default (request: NextApiRequest, response: NextApiResponse) => {
+const getUsers = (request: NextApiRequest, response: NextApiResponse) => {
   const user = [
     {
       id: 1,
@@ -10,3 +10,5 @@ export default (request: NextApiRequest, response: NextApiResponse) => {
 
   return response.json(user);
 };
+
+export default getUsers;
