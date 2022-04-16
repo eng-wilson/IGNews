@@ -1,0 +1,21 @@
+{
+  "id": "605a89cf-6f04-4b6f-91af-582401d448ea",
+  "uid": "est-atque-perspiciatis",
+  "type": "publication",
+  "data": {
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Mollit sunt mollit amet minim nostrud. Dolore Lorem nulla irure et velit culpa velit.",
+        "spans": []
+      }
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Officia consectetur sit id consectetur sint irure mollit laborum nisi consequat non elit exercitation quis. Proident elit nisi aute amet sit nulla in adipisicing.",
+        "spans": []
+      }
+    ]
+  }
+}
