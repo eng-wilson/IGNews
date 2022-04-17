@@ -36,6 +36,7 @@
     "babel-jest": "^27.5.1",
     "eslint": "7",
     "eslint-config-next": "12.0.2",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
     "jest-dom": "^4.0.0",
     "slice-machine-ui": "^0.3.7",
