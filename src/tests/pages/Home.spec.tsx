@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { mocked } from "jest-mock";
-import Home, { getStaticProps } from "../pages";
-import { stripe } from "../services/stripe";
+import Home, { getStaticProps } from "../../pages";
+import { stripe } from "../../services/stripe";
 
 jest.mock("next-auth/react", () => {
   return {
@@ -13,7 +13,7 @@ jest.mock("next-auth/react", () => {
   };
 });
 
-jest.mock("../services/stripe");
+jest.mock("../../services/stripe");
 
 describe("Home Page", () => {
   it("should render correctly", () => {

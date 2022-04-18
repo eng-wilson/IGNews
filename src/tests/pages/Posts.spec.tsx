@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { mocked } from "jest-mock";
-import Posts, { getStaticProps } from "../pages/posts";
-import { createClient } from "../services/prismic";
+import Posts, { getStaticProps } from "../../pages/posts";
+
+const prismic = require("../../services/prismic");
 
 const posts = [
   {
@@ -19,8 +19,7 @@ describe("Posts Page", () => {
     expect(screen.getByText("My new post")).toBeInTheDocument();
   });
 
-  it("loads initial data", async () => {
-    const prismic = require("../services/prismic");
+  it("should load initial data", async () => {
     const getPrismicClientMocked = jest.spyOn(prismic, "createClient");
 
     getPrismicClientMocked.mockReturnValueOnce({
