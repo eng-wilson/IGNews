@@ -9,8 +9,8 @@ jest.mock("next-auth/react");
 jest.mock("next/router");
 
 describe("SubscribeButton component", () => {
-  const useSessionMocked = mocked(useSession);
   it("should render correctly", () => {
+    const useSessionMocked = mocked(useSession);
     useSessionMocked.mockReturnValueOnce({ data: null, status: "loading" });
 
     render(<SubscribeButton />);
